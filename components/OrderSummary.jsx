@@ -72,7 +72,7 @@ const OrderSummary = () => {
       toast.loading("Creating order...");
       const token = await getToken();
 
-      const totalAmount = getCartAmount() + Math.floor(getCartAmount() * 0.02);
+      const totalAmount = getCartAmount() + Math.floor(getCartAmount() * 0.02)+ checksizecost(cartItems)*100 +100;
 
       payloadRef.current = {
         address: selectedAddress.id,
