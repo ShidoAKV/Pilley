@@ -226,7 +226,6 @@ const Refundform = () => {
               Submitted on: <span className="text-white font-medium">{new Date().toLocaleString()}</span>
             </p>
           </div>
-
         )}
       </div>
     </div>

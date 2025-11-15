@@ -9,8 +9,6 @@ import { useAppContext } from "@/context/AppContext";
 const Cart = () => {
   const { products, router, cartItems, addToCart, updateCartQuantity, getCartCount } = useAppContext();
 
-  
-
   useEffect(() => {
     if (products) {
       router.push('/cart')
